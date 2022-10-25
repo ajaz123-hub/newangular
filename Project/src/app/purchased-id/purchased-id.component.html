@@ -1,0 +1,41 @@
+<p>purchased-id works!</p>
+<p>purchasedbooks works!</p>
+
+<!-- <p>searchbooks works!</p> -->
+<html>
+
+  <body></body>
+
+<div class="container">
+
+  <div>
+
+    EmailId : <input type="text" name="Email" [(ngModel)]="emailId"><br><br>
+
+    
+
+
+  </div>
+  <div>
+
+    BookId  : <input type="text" name="BookId" [(ngModel)]="bookId">
+
+
+  </div>
+
+  <button (click)=purchasedId() class="btn btn-success">
+
+    purchased
+
+  </button>
+
+ 
+
+</div><br><br>
+
+
+<app-purchased-idres *ngIf="books" [buybook]="books"></app-purchased-idres>
+    
+
+</html>
+

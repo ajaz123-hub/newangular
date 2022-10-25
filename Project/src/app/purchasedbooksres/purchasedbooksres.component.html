@@ -1,0 +1,36 @@
+<p>purchasedbooksres works!</p>
+<!-- <p>searchbooksres works!</p> -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <table class="table table-striped table-hover" style="background-color:white">
+    <thead style="background-color:aquamarine">
+       
+      <td>bookId</td>
+    <td>name</td>
+    <td>bookName</td>
+    <td>emailId</td>
+    <td>date</td>
+    
+    <td></td>
+    </thead>
+  
+      <tr *ngFor="let book of buybook">
+    <td>{{book.bookId}}</td>
+    <td>{{book.name}}</td>
+    <td>{{book.bookName}}</td>
+    <td>{{book.emailId}}</td>
+    <td>{{book.publishedDate}}</td>
+    
+    <!-- <td><button (click) ='deleteBook(book.id)'>Delete Book</button></td> -->
+      </tr>
+  
+  <br>
+  <!-- <button routerLink="/createbook" class='btn btn-dark' > Back </button> -->
+</table>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<p>purchasedbooks works!</p>
+
+<!-- <p>searchbooks works!</p> -->
+<html>
+
+  <body></body>
+
+<div class="container">
+
+  <div>
+
+    EmailId : <input type="text" name="EmailId" [(ngModel)]="emailId" ><br>
+
+
+  </div>
+
+  <button (click)=purchased() class="btn btn-success">
+
+    purchased
+
+  </button>
+
+ 
+
+</div><br><br>
+
+
+<app-purchasedbooksres *ngIf="books" [buybook]="books"></app-purchasedbooksres>
+
+</html>
